@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+         <div class="logoback"><img class="logo"  src="odin.png" alt=""><span class="logotext">Sandhu</span>   </div>
+    </div>
+       
+
+    <div class="right"> 
+            <div class="heading">
+                <p>This is not a real online service! You know you need something  
+            like this to help you realize your deepest dreams.  
+            Sign up <i>now</i> to get started. </p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+
+
+            <div class="formarea"> 
+                <div>Let's do this!</div>
+                 
+                <form action="#">
+                <div class="input">
+                    <label for="fname">FIRST NAME</label> 
+                    <input type="text" id="fname"> 
+                 </div>
+                <div class="input"> 
+                    <label for="lname">LAST NAME</label> 
+                    <input type="text" id="lname"> </div>
+                <div class="input">  
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email"></div> 
+
+                <div class="input">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" id="phone"> </div>
+                <div class="input pass">
+                    <label for="pass">PASSWORD</label>
+                    <input  class="error" type="text" id="pass"></div>
+                <div class="input pass">
+                    <label for="cpass">CONFIRM PASSWORD</label>
+                    <input  class="error" type="text" id="cpass" onkeyup="validatepassword()"></div>
+                    <div class="errormessage"></div>
+                 </form>
+                 </div>
+                 <div class="button" > <button action="submit">Create Account</button></div> 
+
+           <div class="bottom">
+            <span> Already have an account?<b><a href="#"> Log in</a></b> </span> 
+            </div> 
+       
+        
+    </div>
+  </div>
+</body>
+<script>
+
+
+function validatepassword (){
+    
+let password = document.getElementById("pass").value
+let confirmpassword = document.getElementById("cpass").value
+    if (password  != confirmpassword && password !=''&& confirmpassword!=''){
+        document.querySelector(".errormessage").style.color='red'
+        document.querySelector(".error").classList.add("passcheck")
+        document.querySelector(".errormessage").textContent = '☒ Passwords are not matching' }
+    else if(password  === confirmpassword && password !=''&& confirmpassword!='')
+    {
+        document.querySelector(".error").classList.remove("passcheck")
+        document.querySelector(".errormessage").style.color='green'
+        document.querySelector(".errormessage").textContent = 'Passwords are matching !!' 
+  
+    }
+        else {
+        document.querySelector(".error").classList.remove("passcheck")
+        document.querySelector(".errormessage").style.color='red'
+        document.querySelector(".errormessage").textContent = 'Password cannot be empty !!' 
+  
+    }
+}
+
+</script>
+</html>

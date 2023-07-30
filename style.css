@@ -1,0 +1,159 @@
+.root, body{
+    padding: 0;
+    margin: 0; 
+    font-family: arial; 
+
+
+ }
+
+.main{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    height: 100vh;
+    width:  100vw;
+     
+}
+.left{    
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 35vw;
+    background-image: url("tree.jpg");
+    background-repeat:  repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+
+}
+ 
+ .logoback{
+    background: rgba(0, 0, 0, 0.33);
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    height: 15vh;
+    column-gap: 2vh;
+     padding: 1vh;
+     }
+  
+ .logotext {
+    font-size: 15vh;
+    color: white; 
+    font-family: 'Norse';
+  }
+
+.right{
+     display: flex;
+    width: 65vw;
+     /* justify-content: center; */
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    background-color: whitesmoke;
+    
+  }
+.heading {
+    padding-left: 10vh;
+    padding-right: 12vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+     font-family: arial; 
+     
+
+}
+ .formarea{
+    display: flex;
+    left: 0;
+    right: 0;
+    row-gap: 10px;
+    flex-direction: column;
+    padding-left: 10vh;
+    padding-right: 18vw;
+    padding-bottom: 5vh;
+    padding-top: 1.5vw;
+    background-color: white;
+ 
+  }
+
+ form{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row  ;
+    column-gap: 5vw;
+    row-gap: 3vh;
+
+
+   } 
+
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2vw;
+    font-size: 12px
+}  
+.input>input{
+    border: solid 2px #E5E7EB ;
+}
+.input>input:focus{
+    border: solid 2px blue; 
+    outline: none;
+
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.input>label{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+      font-size: .80vw;
+}
+.formarea>:nth-child(1){
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: arial; 
+
+}  
+.passcheck{
+    border: solid 2px red !important;
+     
+}
+.errormessage{
+    color: red;
+    font-size: .90vw;
+}
+ 
+.bottom{
+    padding-left: 10vh;
+    padding-right: 12vw;
+} 
+.button{
+    
+    padding-left: 10vh;
+    padding-right: 12vw;
+
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+.button>button{
+
+   background-color:#596D48;
+   color: #fff;
+   border:none; 
+   border-radius:10px; 
+   padding:15px 40px;
+   font-weight: bold; 
+}
+.button>button:hover{
+ background-color: #739158;
+    
+ }
+ 
+
+.bottom > span > b > a {
+    text-decoration: none;
+    color: #596D48;
+}
